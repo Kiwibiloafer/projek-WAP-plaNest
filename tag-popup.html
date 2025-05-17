@@ -1,0 +1,33 @@
+<style>
+  #tag-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 300px;
+  }
+  #tag-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    z-index: 1040;
+  }
+</style>
+
+<div id="tag-popup-overlay"></div>
+<div id="tag-popup">
+  <h5>Add New Tag</h5>
+  <input type="text" id="tag-name" class="form-control mb-3" placeholder="Enter tag name">
+  <div class="text-end">
+    <button id="cancel-tag" class="btn btn-secondary btn-sm me-2">Cancel</button>
+    <button id="save-tag" class="btn btn-primary btn-sm">Save</button>
+  </div>
+</div>
