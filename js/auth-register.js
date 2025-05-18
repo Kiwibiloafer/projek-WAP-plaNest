@@ -4,6 +4,9 @@ import { app } from './firebase-config.js';
 const auth = getAuth(app);
 
 const registerForm = document.getElementById('register-form');
+document.getElementById("back-button").addEventListener("click", () => {
+  window.history.back(); // atau window.location.href = "dashboard.html";
+});
 
 registerForm.addEventListener('submit', function (e) {
   e.preventDefault();

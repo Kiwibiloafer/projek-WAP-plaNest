@@ -6,6 +6,10 @@ import {
   onValue,
 } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js';
 
+document.getElementById("back-button").addEventListener("click", () => {
+  window.history.back(); // atau window.location.href = "dashboard.html";
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const titleInput = document.getElementById("note-title");
   const contentInput = document.getElementById("note-content");
